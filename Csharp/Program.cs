@@ -8,5 +8,7 @@ namespace Csharp
         {
             Console.WriteLine("ready");
         }
+        //Main 진입점 다수 일 때 dotnet 으로 실행하는 경우 옵션,
+        //dotnet run Csharp.csproj /p:StartupObject=Csharp.Program
     }
 }

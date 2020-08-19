@@ -3,6 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    
+    <!--프로그램 진입점 강제 설정-->
+    <StartupObject>Csharp.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
