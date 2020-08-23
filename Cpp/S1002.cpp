@@ -15,7 +15,7 @@ int main(void)
     struct Person p1, p2;
     int loopControl = 0;
     cin >> loopControl;
-    while(loopControl--)
+    while(loopControl-->0)
     {
         cin >> p1.x >> p1.y >> p1.target_distance >> p2.x >> p2.y >> p2.target_distance;
         
