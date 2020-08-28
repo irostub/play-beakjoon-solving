@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int nazi[41] = {0,1};
+int nazi[41] = {0, 1};
 
 int fibonacci(int n)
 {
@@ -10,7 +10,7 @@ int fibonacci(int n)
     {
         return nazi[n];
     }
-    nazi[n] = fibonacci(n-1) + fibonacci(n-2);
+    nazi[n] = fibonacci(n - 1) + fibonacci(n - 2);
     return nazi[n];
 }
 int main(void)
@@ -18,7 +18,7 @@ int main(void)
     int T;
     scanf("%d", &T);
 
-    for(int i = 0; i<T; i++)
+    for (int i = 0; i < T; i++)
     {
         int X;
         scanf("%d", &X);
@@ -34,6 +34,6 @@ int main(void)
         }
         fibonacci(X);
         if (X != 0)
-        printf("%d %d\n",nazi[X-1],nazi[X]);
+            printf("%d %d\n", nazi[X - 1], nazi[X]);
     }
 }

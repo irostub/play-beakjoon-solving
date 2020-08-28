@@ -48,10 +48,8 @@
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",
-
             //컴파일시 에러를 편집기에 반영
             //참고:   https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
-
             "problemMatcher": {
                 "fileLocation": [
                     "relative",
@@ -59,7 +57,7 @@
                 ],
                 "pattern": {
                     // The regular expression. 
-                   //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
+                    //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
                     "file": 1,
                     "line": 2,
@@ -79,10 +77,8 @@
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",
-
             //컴파일시 에러를 편집기에 반영
             //참고:   https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
-
             "problemMatcher": {
                 "fileLocation": [
                     "relative",
@@ -90,7 +86,7 @@
                 ],
                 "pattern": {
                     // The regular expression. 
-                   //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
+                    //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
                     "file": 1,
                     "line": 2,
@@ -112,9 +108,9 @@
             "command": "cmd",
             "group": "test",
             "args": [
-                "/C", "${fileDirname}\\${fileBasenameNoExtension}"
+                "/C",
+                "${fileDirname}\\${fileBasenameNoExtension}"
             ]
-    
         }
     ]
 }
