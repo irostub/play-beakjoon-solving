@@ -1,8 +1,8 @@
 def switchNumber(a: str):
-    temp = a[0]
-    a[0] = a[2]
-    a[2] = temp
-    return a
+    temp = a[2:]
+    temp += a[1:2]
+    temp += a[0:1]
+    return temp
 
 
 S1, S2 = input().split()
